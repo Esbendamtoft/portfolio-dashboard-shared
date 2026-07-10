@@ -221,6 +221,13 @@
           <li><b>Højreklik</b> på appen → vælg <b>Åbn</b>.</li>
           <li>Klik <b>Åbn</b> i dialogen. Herefter starter den normalt hver gang.</li>
         </ol>
+        <p style="margin:16px 0 0"><b>Hjælper det ikke</b> (fx "appen er beskadiget"):</p>
+        <ol class="steps">
+          <li>Åbn <b>.dmg</b>'en og træk appen til <b>Programmer</b>.</li>
+          <li>Åbn <b>Terminal</b> og kør (fjerner macOS' karantæne-flag):
+            <code style="display:block;margin-top:6px;padding:8px 10px;overflow-x:auto;white-space:nowrap">xattr -cr "/Applications/Portfolio Dashboard.app"</code>
+          </li>
+        </ol>
       </div>
     </div>
   </div>
