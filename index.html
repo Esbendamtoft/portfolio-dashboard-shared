@@ -102,6 +102,16 @@
   .card h3{font-size:18px;margin-bottom:8px;letter-spacing:-.01em}
   .card p{color:var(--dim);font-size:15px}
 
+  /* SECURITY BOX */
+  .secbox{display:flex;gap:22px;align-items:center;max-width:780px;margin:0 auto;
+    background:linear-gradient(135deg,rgba(38,166,154,.12),rgba(108,125,255,.06));
+    border:1px solid rgba(38,166,154,.38);border-radius:18px;padding:26px 30px}
+  .secbox .lock{font-size:38px;line-height:1;flex-shrink:0}
+  .secbox h3{font-size:20px;margin-bottom:8px;letter-spacing:-.01em}
+  .secbox p{color:var(--dim);font-size:15px;line-height:1.6}
+  .secbox b{color:var(--text)}
+  @media(max-width:560px){.secbox{flex-direction:column;text-align:center;gap:14px;padding:24px}}
+
   /* DOWNLOAD */
   #download{text-align:center}
   .dl-card{max-width:640px;margin:0 auto;background:linear-gradient(180deg,var(--surface),#0e131d);
@@ -205,6 +215,18 @@
       <div class="card"><span class="em">📈</span><h3>Aktieoverblik & heatmap</h3><p>Alle positioner i én tabel med afkast, vægt og et farvet heatmap over hvad der trækker op og ned.</p></div>
       <div class="card"><span class="em">🔒</span><h3>Privacy Mode</h3><p>Skjul alle beløb med ét klik, når du deler skærm — tallene er der stadig, bare ikke synlige.</p></div>
       <div class="card"><span class="em">📥</span><h3>Nordnet-import</h3><p>Importér dine beholdninger direkte fra Nordnet-CSV, eller eksportér dine data når du vil.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="secbox">
+      <div class="lock">🔒</div>
+      <div>
+        <h3>Alle dine data er krypteret lokalt</h3>
+        <p>Din porteføljedata ligger <b>krypteret på din egen Mac</b> (SQLCipher, AES‑256) og låses op med <b>Touch ID</b>, når du åbner appen. Der er ingen server og ingen konto — kun offentlige aktiekurser hentes fra Yahoo Finance. Dine tal forlader aldrig din computer.</p>
+      </div>
     </div>
   </div>
 </section>
