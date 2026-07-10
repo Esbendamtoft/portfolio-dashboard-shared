@@ -62,15 +62,22 @@
   .traffic{width:12px;height:12px;border-radius:50%}
   .tr-r{background:#ff5f57}.tr-y{background:#febc2e}.tr-g{background:#28c840}
   .titlebar .t{margin-left:10px;font-size:13px;color:var(--dim)}
-  .app{display:grid;grid-template-columns:64px 1fr;min-height:380px}
-  .rail{background:#0e131d;border-right:1px solid var(--border);padding:16px 0;display:flex;flex-direction:column;align-items:center;gap:14px}
-  .rail .ic{width:34px;height:34px;border-radius:9px;background:var(--surface-2);display:grid;place-items:center;font-size:16px}
-  .rail .ic.on{background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 6px 18px -6px var(--accent)}
+  .app{display:grid;grid-template-columns:224px 1fr;min-height:380px}
+  .sidebar{background:#0e131d;border-right:1px solid var(--border);padding:14px 12px;display:flex;flex-direction:column;gap:7px}
+  .ptab{display:flex;align-items:center;gap:9px;padding:9px 11px;border-radius:10px;font-size:13px;color:var(--text)}
+  .ptab .picon{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 35% 28%,#2a3350,#0a0d15);display:grid;place-items:center;font-size:13px;flex-shrink:0}
+  .ptab .pname{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ptab-all{background:linear-gradient(135deg,var(--green),#2bbf9f);color:#052a22;font-weight:700}
+  .ptab-all .picon{background:rgba(255,255,255,.28)}
+  .ptab .pb{display:flex;align-items:center;gap:5px;font-size:11px;font-variant-numeric:tabular-nums}
+  .pdot{width:7px;height:7px;border-radius:50%}
+  .pdot.up{background:var(--green)}.pdot.down{background:var(--red)}
+  .ptab .pb.up{color:var(--green)}.ptab .pb.down{color:var(--red)}
   .body{padding:22px 24px}
-  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(115px,1fr));gap:14px;margin-bottom:20px}
   .kpi{background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
   .kpi .l{font-size:12px;color:var(--dim);margin-bottom:6px}
-  .kpi .v{font-size:20px;font-weight:700;letter-spacing:-.02em}
+  .kpi .v{font-size:19px;font-weight:700;letter-spacing:-.02em;white-space:nowrap}
   .kpi .v.g{color:var(--green)}
   .chart{height:120px;border:1px solid var(--border);border-radius:12px;background:
     linear-gradient(180deg,rgba(108,125,255,.10),transparent);position:relative;overflow:hidden;margin-bottom:16px}
@@ -117,7 +124,7 @@
     .brand span.label{display:none}
   }
   @media(max-width:620px){
-    .app{grid-template-columns:1fr}.rail{display:none}
+    .app{grid-template-columns:1fr}.sidebar{display:none}
     .kpis{grid-template-columns:1fr 1fr}
     header{padding:60px 0 40px}
   }
@@ -153,8 +160,11 @@
           <span class="t">Portfolio Dashboard</span>
         </div>
         <div class="app">
-          <div class="rail">
-            <div class="ic on">📊</div><div class="ic">📈</div><div class="ic">💰</div><div class="ic">🔍</div>
+          <div class="sidebar">
+            <div class="ptab ptab-all"><span class="picon">🌐</span><span class="pname">Portfolio Overview</span></div>
+            <div class="ptab"><span class="picon">📈</span><span class="pname">Nordnet Depot</span><span class="pb up"><span class="pdot up"></span>+0,6%</span></div>
+            <div class="ptab"><span class="picon">🏛️</span><span class="pname">Pensions Depot</span><span class="pb up"><span class="pdot up"></span>+0,4%</span></div>
+            <div class="ptab"><span class="picon">💰</span><span class="pname">Assets</span><span class="pb down"><span class="pdot down"></span>−0,2%</span></div>
           </div>
           <div class="body">
             <div class="kpis">
