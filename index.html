@@ -71,8 +71,8 @@
   .ptab-all .picon{background:rgba(255,255,255,.28)}
   .ptab .pb{display:flex;align-items:center;gap:5px;font-size:11px;font-variant-numeric:tabular-nums}
   .pdot{width:7px;height:7px;border-radius:50%}
-  .pdot.up{background:var(--green)}.pdot.down{background:var(--red)}
-  .ptab .pb.up{color:var(--green)}.ptab .pb.down{color:var(--red)}
+  .pdot.up{background:var(--green)}.pdot.down{background:var(--red)}.pdot.flat{background:var(--dim)}
+  .ptab .pb.up{color:var(--green)}.ptab .pb.down{color:var(--red)}.ptab .pb.flat{color:var(--dim)}
   .body{padding:22px 24px}
   .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(115px,1fr));gap:14px;margin-bottom:20px}
   .kpi{background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
@@ -162,14 +162,14 @@
         <div class="app">
           <div class="sidebar">
             <div class="ptab ptab-all"><span class="picon">🌐</span><span class="pname">Portfolio Overview</span></div>
-            <div class="ptab"><span class="picon">📈</span><span class="pname">Nordnet Depot</span><span class="pb up"><span class="pdot up"></span>+0,6%</span></div>
-            <div class="ptab"><span class="picon">🏛️</span><span class="pname">Pensions Depot</span><span class="pb up"><span class="pdot up"></span>+0,4%</span></div>
-            <div class="ptab"><span class="picon">💰</span><span class="pname">Assets</span><span class="pb down"><span class="pdot down"></span>−0,2%</span></div>
+            <div class="ptab"><span class="picon">🏦</span><span class="pname">Nordnet</span><span class="pb up"><span class="pdot up"></span>+0,6%</span></div>
+            <div class="ptab"><span class="picon">🏛️</span><span class="pname">Pension</span><span class="pb up"><span class="pdot up"></span>+0,4%</span></div>
+            <div class="ptab"><span class="picon">💰</span><span class="pname">Assets</span><span class="pb flat"><span class="pdot flat"></span>0,0%</span></div>
           </div>
           <div class="body">
             <div class="kpis">
               <div class="kpi"><div class="l">Samlet værdi</div><div class="v">850.000 kr.</div></div>
-              <div class="kpi"><div class="l">I dag</div><div class="v g">+3.100 kr.</div></div>
+              <div class="kpi"><div class="l">I dag</div><div class="v g">+3.400 kr.</div></div>
               <div class="kpi"><div class="l">Udbytte i år</div><div class="v">8.000 kr.</div></div>
             </div>
             <div class="chart">
@@ -182,9 +182,9 @@
               </svg>
             </div>
             <div class="rows">
-              <div class="row"><span class="tk">🏦 Nordnet Depot</span><span class="mut">300.000 kr.</span><span class="up">+0,6 %</span></div>
-              <div class="row"><span class="tk">🏛️ Pensions Depot</span><span class="mut">400.000 kr.</span><span class="up">+0,4 %</span></div>
-              <div class="row"><span class="tk">💰 Assets</span><span class="mut">150.000 kr.</span><span class="down">−0,2 %</span></div>
+              <div class="row"><span class="tk">🏦 Nordnet</span><span class="mut">300.000 kr.</span><span class="up">+0,6 %</span></div>
+              <div class="row"><span class="tk">🏛️ Pension</span><span class="mut">400.000 kr.</span><span class="up">+0,4 %</span></div>
+              <div class="row"><span class="tk">💰 Assets</span><span class="mut">150.000 kr.</span><span class="mut">0,0 %</span></div>
             </div>
           </div>
         </div>
