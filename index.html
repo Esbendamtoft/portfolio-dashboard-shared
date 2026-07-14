@@ -41,6 +41,8 @@
   .lang button[aria-pressed="true"]{background:var(--accent);color:#fff}
   .lang button:hover{color:var(--text)}
   .lang button[aria-pressed="true"]:hover{color:#fff}
+  .nav-link{color:var(--dim);font-weight:600;font-size:14px;transition:color .15s ease;white-space:nowrap}
+  .nav-link:hover{color:var(--text)}
   .nav-cta{background:var(--accent);color:#fff;padding:9px 18px;border-radius:10px;
     font-weight:600;font-size:14px;transition:transform .15s ease,background .15s ease}
   .nav-cta:hover{background:#5566ff;transform:translateY(-1px)}
@@ -159,6 +161,7 @@
         <button type="button" data-lang="da">DA</button>
         <button type="button" data-lang="en">EN</button>
       </div>
+      <a class="nav-link" href="release-notes.html" data-i18n="nav_notes">Nyheder</a>
       <a class="nav-cta" href="#download" data-i18n="nav_download">Download</a>
     </div>
   </div>
@@ -289,6 +292,7 @@
       title: "Portfolio Dashboard — din portefølje, live på Mac",
       meta: "Følg dine aktier, ETF'er og udbytter live fra Yahoo Finance. En hurtig, native Mac-app med flere porteføljer, udbytte-prognose og privacy mode.",
       nav_download: "Download",
+      nav_notes: "Nyheder",
       hero_pill: "Live kurser fra Yahoo Finance",
       hero_h1: 'Hele din portefølje.<br /><span class="grad">Live på din Mac.</span>',
       hero_sub: "Følg dine aktier, ETF'er og udbytter i realtid — flere porteføljer, udbytte-prognose og fuld privacy mode. En hurtig, native app der åbner på ét sekund.",
@@ -341,6 +345,7 @@
       title: "Portfolio Dashboard — your portfolio, live on Mac",
       meta: "Track your stocks, ETFs and dividends live from Yahoo Finance. A fast, native Mac app with multiple portfolios, dividend forecasting and privacy mode.",
       nav_download: "Download",
+      nav_notes: "What's new",
       hero_pill: "Live prices from Yahoo Finance",
       hero_h1: 'Your whole portfolio.<br /><span class="grad">Live on your Mac.</span>',
       hero_sub: "Track your stocks, ETFs and dividends in real time — multiple portfolios, dividend forecasting and full privacy mode. A fast, native app that opens in a second.",
