@@ -117,6 +117,15 @@
   // are ["<bold lead>", "<rest>"]. Newest first; the first entry is marked Latest.
   var RELEASES = [
     {
+      version: "0.2.51", date: "2026-07-14",
+      items: [
+        { ic: "📈", da: ["Rettet: amerikanske aktier viste ~0% afkast om aftenen.", "Om aftenen (dansk tid = amerikansk lukketid) viste 'I dag' kun den lille eftermarkeds-bevægelse i stedet for dagens rigtige afkast. Nu vises dagens korrekte bevægelse hele aftenen."],
+                     en: ["Fixed: US stocks showed ~0% return in the evening.", "In the evening (Danish time = US after-hours), 'Today' only showed the tiny post-market move instead of the day's real return. Now the correct day return shows all evening."] },
+        { ic: "🏖️", da: ["Fase 2: mere retvisende beregning.", "Folkepension udbetales nu først fra folkepensionsalderen (ikke fra din startalder), og overskydende pension bliver ikke længere gemt oveni formuen — det bruges bare som en del af lønnen, som i virkeligheden."],
+                     en: ["Phase 2: more accurate calculation.", "State pension now only pays from the state-pension age (not your start age), and surplus pension is no longer saved on top of wealth — it's just spent as part of your income, like in reality."] }
+      ]
+    },
+    {
       version: "0.2.50", date: "2026-07-14",
       items: [
         { ic: "💸", da: ["Skriv dit ønskede rådighedsbeløb pr. måned.", "I begge FIRE-faser kan du nu taste hvad du vil have til rådighed om måneden — så beregner appen baglæns hvor meget der skal til før skat."],
