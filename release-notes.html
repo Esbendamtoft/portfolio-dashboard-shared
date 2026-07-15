@@ -117,6 +117,21 @@
   // are ["<bold lead>", "<rest>"]. Newest first; the first entry is marked Latest.
   var RELEASES = [
     {
+      version: "0.2.52", date: "2026-07-15",
+      items: [
+        { ic: "📊", da: ["Aktie-heatmap sorteres nu efter dagens ændring.", "Boksene på Portfolio Overview vises med størst stigning øverst til venstre i stedet for efter værdi."],
+                     en: ["Stock heatmap now sorted by today's change.", "Boxes on Portfolio Overview show the biggest gainers first instead of being sorted by value."] },
+        { ic: "🧊", da: ["Selskabsnavnet bliver stående når du scroller.", "I aktieoverblikkets tabel (både per depot og på det samlede overblik) er kolonnen med navnet nu fastfrosset, så du altid kan se hvilken aktie rækken hører til."],
+                     en: ["Company name stays put while you scroll.", "In the holdings table (both per depot and on the combined overview), the name column is now frozen so you always see which stock a row belongs to."] },
+        { ic: "🏖️", da: ["Fase 2: personfradrag og flere ratepensioner.", "Der er nu et skattefrit personfradrag pr. måned i beregningen, og du kan tilføje flere ratepensioner — hver med sin egen værdi og udbetalingsperiode."],
+                     en: ["Phase 2: tax-free allowance and multiple ratepensions.", "There's now a monthly tax-free personal allowance in the calculation, and you can add several ratepensions — each with its own value and payout period."] },
+        { ic: "🔢", da: ["Beløb i Fire-beregneren vises nu med punktum.", "Skriv fx 700000 i et beløbsfelt, og se 700.000 kr. når du er færdig med at taste — lettere at læse end en række nuller."],
+                     en: ["Amounts in the Fire calculator now show thousand separators.", "Type e.g. 700000 in an amount field and see 700,000 kr. once you're done typing — easier to read than a string of zeros."] },
+        { ic: "🈴", da: ["\"Yield\" hedder nu \"Udbytte\" konsekvent på dansk.", "Sammen med en opdateret standard for aktieskat-grænsen (79.400 kr) og øjet til at skjule beløb, der nu sidder ved siden af Print-knappen."],
+                     en: ["\"Yield\" is now consistently called \"Udbytte\" in Danish.", "Along with an updated default for the share-tax threshold (79,400 kr) and the privacy eye, which now sits next to the Print button."] }
+      ]
+    },
+    {
       version: "0.2.51", date: "2026-07-14",
       items: [
         { ic: "📈", da: ["Rettet: amerikanske aktier viste ~0% afkast om aftenen.", "Om aftenen (dansk tid = amerikansk lukketid) viste 'I dag' kun den lille eftermarkeds-bevægelse i stedet for dagens rigtige afkast. Nu vises dagens korrekte bevægelse hele aftenen."],
