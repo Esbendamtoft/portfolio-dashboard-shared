@@ -117,6 +117,15 @@
   // are ["<bold lead>", "<rest>"]. Newest first; the first entry is marked Latest.
   var RELEASES = [
     {
+      version: "0.2.57", date: "2026-07-15",
+      items: [
+        { ic: "💱", da: ["Dagens afkast tager nu højde for valutakursen.", "Aktier i USD/EUR/GBP m.fl. viste kun kursbevægelsen i aktiens egen valuta — hvis valutakursen selv bevægede sig i løbet af dagen, talte det ikke med. Nu regnes begge dele med, både i det samlede overblik og på hvert enkelt depot."],
+                     en: ["Today's return now accounts for currency moves.", "Stocks priced in USD/EUR/GBP etc. only showed the price move in the stock's own currency — if the exchange rate itself moved during the day, that wasn't counted. Now both are included, both in the combined overview and on each individual depot."] },
+        { ic: "🔄", da: ["Siderne opdaterer sig nu selv, når du vender tilbage.", "Hvis en fane har ligget i baggrunden et stykke tid, opdateres tallene nu med det samme du skifter tilbage til den, i stedet for at vise gamle tal indtil næste automatiske opdatering."],
+                     en: ["Pages now refresh themselves when you come back.", "If a tab has been in the background for a while, the numbers now update immediately when you switch back to it, instead of showing stale numbers until the next automatic refresh."] }
+      ]
+    },
+    {
       version: "0.2.56", date: "2026-07-15",
       items: [
         { ic: "🎲", da: ["Ny: Monte Carlo-simulering i Fire-beregneren.", "I stedet for kun ét fast afkast kan du nu køre 1.000 tilfældige forløb og se sandsynligheden for at din plan lykkes — plus en graf med bedste/median/værste 10%. Du kan selv justere forventet afkast og volatilitet, og teste en god eller dårlig start på markedet."],
