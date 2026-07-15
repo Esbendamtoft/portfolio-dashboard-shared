@@ -117,6 +117,23 @@
   // are ["<bold lead>", "<rest>"]. Newest first; the first entry is marked Latest.
   var RELEASES = [
     {
+      version: "0.2.56", date: "2026-07-15",
+      items: [
+        { ic: "🎲", da: ["Ny: Monte Carlo-simulering i Fire-beregneren.", "I stedet for kun ét fast afkast kan du nu køre 1.000 tilfældige forløb og se sandsynligheden for at din plan lykkes — plus en graf med bedste/median/værste 10%. Du kan selv justere forventet afkast og volatilitet, og teste en god eller dårlig start på markedet."],
+                     en: ["New: Monte Carlo simulation in the Fire calculator.", "Instead of just one fixed return, you can now run 1,000 randomized scenarios and see the probability your plan succeeds — plus a chart of best/median/worst 10%. You can adjust expected return and volatility yourself, and test a good or bad market start."] },
+        { ic: "🏖️", da: ["Ratepension-udbetalingen følger nu markedet.", "I Monte Carlo-simuleringen genberegnes din ratepensions årlige udbetaling ud fra den faktiske saldo — går det godt, stiger udbetalingen; går det dårligt, falder den. Ligesom en rigtig ratepension."],
+                     en: ["Ratepension payouts now follow the market.", "In the Monte Carlo simulation, your ratepension's yearly payout is recalculated from the actual balance — a good year raises it, a bad year lowers it. Just like a real ratepension."] },
+        { ic: "🛟", da: ["Kontant buffer bruges nu rigtigt til kursfald.", "Bufferen dækker udgifter i år med markedsfald, så du ikke behøver sælge investeringer på et dårligt tidspunkt — det reducerer risikoen markant, hvis der kommer et dårligt startforløb."],
+                     en: ["Cash buffer now correctly used during market drops.", "The buffer covers expenses in years with a market drop, so you don't have to sell investments at a bad time — this significantly reduces the risk from a bad starting sequence."] },
+        { ic: "☕", da: ["Barista FIRE bygget om og sammenlignet med Fase 1.", "Barista FIRE er nu bygget op ligesom Fase 1 (samme graf og felter), deltidsindkomst beskattes korrekt, og Fase 2's graf kan nu vise to kurver, så du kan sammenligne almindelig FIRE med Barista FIRE."],
+                     en: ["Barista FIRE rebuilt and compared against Phase 1.", "Barista FIRE is now built the same way as Phase 1 (same chart and fields), part-time income is taxed correctly, and Phase 2's chart can now show two curves so you can compare regular FIRE against Barista FIRE."] },
+        { ic: "🏷️", da: ["Ratepensioner: navngiv rækker og træk dem om.", "Giv hver ratepension et navn og træk i ⠿-håndtaget for at ændre rækkefølgen."],
+                     en: ["Ratepensions: name rows and drag to reorder.", "Give each ratepension a name and drag the ⠿ handle to change the order."] },
+        { ic: "🔤", da: ["Aktieoverblik sorteres nu A-Z som standard.", "Sammen med en rettelse så dine egne tal (fx i Fire-beregneren) også er synlige ved print på hvidt papir."],
+                     en: ["Holdings now sorts A-Z by default.", "Along with a fix so your own typed-in numbers (e.g. in the Fire calculator) are also visible when printing on white paper."] }
+      ]
+    },
+    {
       version: "0.2.52", date: "2026-07-15",
       items: [
         { ic: "📊", da: ["Aktie-heatmap sorteres nu efter dagens ændring.", "Boksene på Portfolio Overview vises med størst stigning øverst til venstre i stedet for efter værdi."],
