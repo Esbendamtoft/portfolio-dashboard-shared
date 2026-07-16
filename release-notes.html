@@ -117,6 +117,15 @@
   // are ["<bold lead>", "<rest>"]. Newest first; the first entry is marked Latest.
   var RELEASES = [
     {
+      version: "0.2.66", date: "2026-07-16",
+      items: [
+        { ic: "⚡", da: ["Hurtigere når kurskilden er langsom.", "Når Yahoo Finance er træg, giver appen op på et dødt kald hurtigere i stedet for at vente længe — så oversigterne ikke hænger. Watchlisten cacher nu det den kan og opdaterer kun kurserne i baggrunden, så den føles hurtig."],
+                     en: ["Faster when the price source is slow.", "When Yahoo Finance is sluggish, the app gives up on a dead call sooner instead of waiting a long time — so the overviews don't hang. The watchlist now caches what it can and only refreshes prices in the background, so it feels quick."] },
+        { ic: "🛡️", da: ["Færre database-hikke under belastning.", "Databasen prøver nu igen ved kortvarige låsninger i stedet for at fejle, så data loader mere stabilt."],
+                     en: ["Fewer database hiccups under load.", "The database now retries on brief locks instead of failing, so data loads more reliably."] }
+      ]
+    },
+    {
       version: "0.2.65", date: "2026-07-16",
       items: [
         { ic: "📋", da: ["Ny: watchlister (kandidatbænk).", "Under Aktieoverblik er der nu en Watchlist-fane ved siden af dine egne aktier. Følg aktier du ikke ejer i én eller flere navngivne lister — de tæller ikke med i porteføljen. Fokus på kurs, analytiker-anbefalinger, kursmål, sentiment og næste regnskab."],
