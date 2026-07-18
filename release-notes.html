@@ -34,6 +34,8 @@
   .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.01em;white-space:nowrap;font-size:16px}
   .brand img{width:32px;height:32px;border-radius:8px}
   .nav-right{display:flex;align-items:center;gap:12px}
+  .nav-link{color:var(--dim);font-weight:600;font-size:14px;transition:color .15s ease;white-space:nowrap}
+  .nav-link:hover{color:var(--text)}
   .lang{display:inline-flex;border:1px solid var(--border);border-radius:9px;overflow:hidden;background:var(--surface)}
   .lang button{appearance:none;-webkit-appearance:none;border:0;background:transparent;color:var(--dim);
     font:inherit;font-size:12px;font-weight:700;letter-spacing:.03em;padding:7px 11px;cursor:pointer;
@@ -81,6 +83,7 @@
   <div class="wrap">
     <a class="brand" href="/"><img src="appicon.png" alt="" /> <span class="label">Portfolio Dashboard</span></a>
     <div class="nav-right">
+      <a class="nav-link" href="faq.html" data-i18n="nav_faq">FAQ</a>
       <div class="lang" role="group" aria-label="Language / Sprog">
         <button type="button" data-lang="da">DA</button>
         <button type="button" data-lang="en">EN</button>
@@ -108,6 +111,7 @@
   <div class="wrap">
     <span data-i18n="footer">Portfolio Dashboard · privat app · data hentes fra Yahoo Finance</span>
     · <a href="/" data-i18n="footer_home">Til forsiden</a>
+    · <a href="faq.html" data-i18n="footer_faq">FAQ</a>
     <!-- Existing users reach this page from the in-app updater, so it's the only
          surface they see after install — but keep it a footer link, not a pitch. -->
     · <a href="https://ko-fi.com/portfoliodashboard" target="_blank" rel="noopener noreferrer" data-i18n="footer_support">Støt udviklingen</a>
@@ -359,24 +363,28 @@
       title: "Release notes — Portfolio Dashboard",
       meta: "Hvad er nyt i Portfolio Dashboard — en oversigt over de seneste opdateringer, forbedringer og rettelser.",
       nav_download: "Download",
+      nav_faq: "FAQ",
       eyebrow: "Hvad er nyt",
       h1: "Release notes",
       sub: "Et kort overblik over hvad de nyeste opdateringer tilføjer og retter. Appen opdaterer sig selv — du behøver ikke gøre noget.",
       latest: "Nyeste",
       footer: "Portfolio Dashboard · privat app · data hentes fra Yahoo Finance",
       footer_home: "Til forsiden",
+      footer_faq: "FAQ",
       footer_support: "Støt udviklingen"
     },
     en: {
       title: "Release notes — Portfolio Dashboard",
       meta: "What's new in Portfolio Dashboard — an overview of the latest updates, improvements and fixes.",
       nav_download: "Download",
+      nav_faq: "FAQ",
       eyebrow: "What's new",
       h1: "Release notes",
       sub: "A short overview of what the latest updates add and fix. The app updates itself — you don't have to do anything.",
       latest: "Latest",
       footer: "Portfolio Dashboard · private app · data from Yahoo Finance",
       footer_home: "Home",
+      footer_faq: "FAQ",
       footer_support: "Support development"
     }
   };
